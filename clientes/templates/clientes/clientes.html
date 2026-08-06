@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantalla Clientes</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>Formulario de Clientes</h2>
+    <from action="/pageclientes/nuevo/" method="POST">
+        {% csrf_token %}
+        <input type="text" name="nombre" placeholder="Nombre"><br>
+        <input type="text" name="apellido" placeholder="Apellido"><br>
+        <input type="text" name="sexo" placeholder="Sexo"><br>
+        <input type="text" name="tipo" placeholder="Tipo"><br>
+        <input type="text" name="direccion" placeholder="Dirección"><br> 
+        <br><button>Guardar</button>
+    </from>
+</body>
+</html>
